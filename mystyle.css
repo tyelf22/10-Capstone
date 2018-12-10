@@ -140,7 +140,9 @@ body{
 
 #popular figure {
     flex-grow: 1;
+    border-radius: 50%;
 }
+
 
 #popular figcaption {
     color: white;
