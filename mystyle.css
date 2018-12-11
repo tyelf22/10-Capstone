@@ -6,64 +6,114 @@ body{
 }
 
 
+@media only screen and (max-width: 801px){
+    .navBar {
+        background-color: black;
+        margin-top: -20px;
+        width: 100%;
+    }
 
-.navBar {
-    background-color: black;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
-    margin-left: 0px;
-    padding: 5px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    box-shadow: 0 2px 2px 2px rgba(0,0,0,.2);
+    .navBar h2 {
+        color: #FE5F55;
+        text-align: center;
+        font-family: 'Amatic SC', cursive;
+        font-size: 50px;
+        margin-top: -30px;
+    }
 
+    .navBar ul {
+        color: white;
+        list-style-type: none;
+        padding: 20px;
+    }
+
+    .navBar li {
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        background-color: #FE5F55;
+        padding: 5px;
+        border-radius: 50px;
+        font-size: 25px;
+    }
+
+    .navBar li a {
+        text-decoration: none;
+        color: white;
+    }
 }
 
-.navBar ul {
-    color: white;
-    margin: 0;
-    padding: 0;
+@media only screen and (min-width: 802px){
+    .navBar {
+        background-color: black;
+        border-top: solid 1px #000;
+        border-bottom: solid 1px #000;
+        margin-left: 0px;
+        padding: 5px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        box-shadow: 0 2px 2px 2px rgba(0,0,0,.2);
+    
+    }
+    
+    
+    .navBar h2 {
+        color: #FE5F55;
+        margin-top: 5px;
+        position: absolute;
+        right: 2%;
+        margin-right: 10px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 40px;
+    }
+    
+    .navBar ul {
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .navBar li {
+        float: left;
+        list-style-type: none;
+        border-left: solid 2px #FE5F55;
+        padding: 15px;
+        margin-right: 5%;
+    }
+    
+    .navBar li:hover {
+        float: left;
+        list-style-type: none;
+        border-left: solid 2px white;
+        padding: 15px;
+        margin-right: 5%;
+    }
+    .navBar li.active {
+        float: left;
+        list-style-type: none;
+        border-left: solid 2px white;
+        padding: 15px;
+        margin-right: 5%;   
+    
+    }
+    
+    .navBar li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    .navBar li a:hover {
+        color: #FE5F55;
+    }
+    
+    .keepOpen{
+        clear: both;
+    }
 }
 
-
-.navBar li {
-    float: left;
-    list-style-type: none;
-    border-left: solid 2px #FE5F55;
-    padding: 15px;
-    margin-right: 5%;
-}
-
-.navBar li:hover {
-    float: left;
-    list-style-type: none;
-    border-left: solid 2px white;
-    padding: 15px;
-    margin-right: 5%;
-}
-.navBar li.active {
-    float: left;
-    list-style-type: none;
-    border-left: solid 2px white;
-    padding: 15px;
-    margin-right: 5%;   
-
-}
-
-.navBar li a {
-    text-decoration: none;
-    color: white;
-}
-
-
-.navBar li a:hover {
-    color: #FE5F55;
-}
-
-.keepOpen{
-    clear: both;
-}
 
 .container {
     margin-left: 10%;
@@ -140,13 +190,19 @@ body{
 
 #popular figure {
     flex-grow: 1;
-    border-radius: 50%;
+    border: solid 5px black;
+    margin-top: 80px;
+}
+
+#popular figure img {
+    width: 100%;
 }
 
 
 #popular figcaption {
     color: white;
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 #testimonials {
@@ -173,3 +229,182 @@ footer p {
    margin-left: 10%;
 }
 
+/* Destination Page*/
+
+#popularDest {
+    
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#popularDest figure {
+    flex-grow: 1;
+    border: solid 5px black;
+    margin-top: 100px;
+}
+
+#popularDest figure img {
+    width: 100%;
+}
+
+
+#popularDest figcaption {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Video Page*/
+
+.pageHeaders{
+    margin-top: 90px;
+    background-color: #FE5F55;
+    width: 100%;
+    padding: 5px;
+    color: white;
+}
+
+.pageHeaders h1 {
+    text-align: center;
+}
+
+#video iframe {
+    width: 100%;
+    height: 500px;
+    margin-top: 25px;
+}
+/*Packages Page*/
+
+@media only screen and (min-width: 910px){
+
+
+.packagesOut{
+    padding: 20px;
+}
+
+.packagesIn{
+    border: dotted 5px #FE5F55;
+    display: flex;
+    margin-top: 10px;
+}
+.packagesIn figure img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.packagesIn figcaption{
+    font-size: 35px;
+    font-weight: 100;
+    color: #FE5F55;
+    margin-top: 5px;
+
+}
+
+.packagesInfo {
+    margin-top: 20px;
+}
+
+.packagesInfo span {
+    color: #FE5F55;
+}
+
+.packagesInfo a {
+    text-decoration: none;
+    color: black;
+}
+
+.packagesInfo a:hover{
+    color: #FE5F55;
+}
+
+}
+
+
+/* Packages Page Media Query*/
+@media only screen and (max-width: 909px) {
+
+    .packagesOut{
+        padding: 20px;
+    }
+    
+    .packagesIn{
+        border: dotted 5px #FE5F55;
+        margin-top: 10px;
+    }
+    .packagesIn figure img {
+        border-radius: 50%;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    
+    .packagesIn figcaption{
+        font-size: 35px;
+        font-weight: 100;
+        color: #FE5F55;
+        margin-top: 5px;
+    
+    }
+    
+    .packagesInfo {
+        margin-top: 20px;
+    }
+    
+    .packagesInfo span {
+        color: #FE5F55;
+    }
+    
+    .packagesInfo a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .packagesInfo a:hover{
+        color: #FE5F55;
+    }
+    
+}
+
+
+/* Contact Page*/
+
+
+form.registerForm fieldset {
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    font-size: .8rem;
+    color: black;
+}
+
+form.registerForm textarea {
+   display: block;
+}
+
+form.registerForm legend {
+    font-weight: 600;
+    margin-left: 1rem;
+    color: #FE5F55;
+}
+form.registerForm span {
+    display: block;
+    padding: .8rem 0 0 .3rem;
+}
+
+form.registerForm .userInfo {
+
+    width: 20rem;
+    border-radius: .6rem;
+    border: solid 1px #cacabb;
+    padding: .4rem;
+    
+}
+
+form.registerForm .userButton {
+    width: 20rem;
+    padding: .8rem;
+    background: #FE5F55;
+    border-radius: .5rem;
+    color: white;
+    margin-top: 10px;
+}
